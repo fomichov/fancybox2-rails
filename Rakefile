@@ -44,7 +44,7 @@ end
 #
 # Returns the String representing the local version.
 def local_version
-  `grep ' * Version' vendor/assets/javascripts/jquery.fancybox.js | \
+  `grep ' * Version' app/assets/javascripts/jquery.fancybox.js | \
   cut -d ' ' -f 4`.chomp
 end
 
